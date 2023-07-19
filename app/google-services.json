@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "559602471433",
+    "project_id": "kwizx-63b72",
+    "storage_bucket": "kwizx-63b72.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559602471433:android:323fb72debeead7b9d1ed8",
+        "android_client_info": {
+          "package_name": "com.abhishek.kwizx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "559602471433-rkog09e11ukokaim91ids2hl6229hrci.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFhMKkUMWf_VjSS17UD3vfcMw0NW5-KZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "559602471433-rkog09e11ukokaim91ids2hl6229hrci.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

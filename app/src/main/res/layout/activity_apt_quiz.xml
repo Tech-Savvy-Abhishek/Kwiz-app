@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizMCQScreen"
+    android:orientation="vertical"
+    android:background="@color/tertiary_quizx"
+    >
+
+
+    <RelativeLayout
+        android:background="@color/secondary_quizx"
+        android:layout_width="match_parent"
+        android:layout_height="45sp" >
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10sp"
+            android:background="@drawable/ic_back_blk"
+
+
+            android:onClick="back"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/ic_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/suez_one"
+
+            android:text="Exit"
+            android:textColor="@color/white"
+            android:textSize="38sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/quiz_timer"
+        android:indeterminate="false"
+        android:max="20"
+        android:maxHeight="12dp"
+        android:minHeight="12dp"
+
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp">
+
+        <TextView
+
+            android:id="@+id/card_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/suez_one"
+            android:gravity="center"
+            android:text="Kwiz APP"
+
+            android:textColor="@color/black" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardOA"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="15dp"
+        android:onClick="optionAClick"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp">
+
+        <TextView
+            android:id="@+id/optiona"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+
+            android:fontFamily="@font/suez_one"
+            android:text="A"
+            android:textColor="@color/black" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardOB"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:onClick="optionBClick"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp">
+
+        <TextView
+            android:id="@+id/optionb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+
+            android:fontFamily="@font/suez_one"
+            android:text="B"
+            android:textColor="@color/black" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardOC"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:onClick="optionCClick"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp">
+
+        <TextView
+            android:id="@+id/optionc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+
+            android:fontFamily="@font/suez_one"
+            android:text="C"
+            android:textColor="@color/black" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardOD"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:onClick="optionDClick"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp">
+
+        <TextView
+            android:id="@+id/optiond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+
+            android:fontFamily="@font/suez_one"
+            android:text="D"
+            android:textColor="@color/black" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/secondary_quizx"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/nextTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/suez_one"
+            android:text="NEXT"
+            android:textAllCaps="true"
+
+
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
